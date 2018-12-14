@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/place/place",
+    "pages/addnote/addnote",
+    "pages/userinfo/userinfo",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/aboutus/aboutus",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星眸云Note",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "default"
+  }
+}

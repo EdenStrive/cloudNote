@@ -1,0 +1,22 @@
+<map id="myMap" class='map' markers='{{markers}}' circles="{{circles}}"show-location />
+<view class="bigX">
+	<view class="big1">address</view>
+	<view class="big2">{{address}}</view>
+	<view class="big3"></view>
+	<view class="big1">City</view>
+	<view class="big2">北京</view>
+	<view class="big4"></view>
+	<view class="big5">
+		<view>
+			<view class="big1">Time</view>
+			<view class="big2">北京</view>
+			<view class="bigL"></view>
+		</view>
+		<view class="big7">
+			<view class="big52">Theme</view>
+			<view>北京</view>
+			<view class="big54"></view>
+		</view>
+	</view>
+</view>
+<!--  -->

@@ -1,0 +1,23 @@
+/* pages/place/place.wxss */
+.map{
+	width: 100%;
+	height: 50vh;
+}
+/*.ziti{
+	margin-top: 10%;
+	margin-left: 5%;
+	font-size:3vh;
+	opacity: 0.5;
+}*/
+.loca-input {
+    margin-top: 10%;
+    padding-left: 5rpx;
+}
+.anniu1, .anniu2{
+	margin-top: 10%;
+    width: 90vw;
+    font-size: 30rpx;
+}
+.anniu1{
+	background-color: #00ff00;
+}

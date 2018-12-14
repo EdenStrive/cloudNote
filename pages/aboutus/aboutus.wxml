@@ -1,0 +1,15 @@
+<view>
+    <view class="about">
+        <view class="about-us">
+            <view class="logo">
+                <image src="../../img/logo.png" />
+            </view>
+            <text class="about-us-line"></text>
+            <text class="about-us-item">"星眸云Note"是一个以微信小程序为主的云笔记平台</text>
+            <text class="about-us-item">针对于日常课堂中老师讲课的PPT、板书或布置的题目等材料学生拍照不便，学生与学生之间传递效率低的情况，支持跨平台与终端数据迁移
+            </text>
+            <text class="about-us-item">同时扩展了已有笔记程序存在功能的限制，主要功能以语音识别记事、地点提醒服务为主，支持多平台数据迁移，为用户提供一个高效便捷的信息记录平台
+            </text>
+        </view>
+    </view>
+</view>

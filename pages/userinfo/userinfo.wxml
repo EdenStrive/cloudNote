@@ -1,0 +1,11 @@
+<view>
+    <view class="info">
+        <view class="img">
+            <image src="{{avatarUrl}}" />
+        </view>
+        <view class="nick">{{userinfo}}</view>
+        <view class="count">笔记数：{{count}}</view>
+    </view>
+    <button class="logout" bindtap="logout" type="warn">退出</button>
+    <view class="about-us" bindtap="aboutUs">关于我们</view>
+</view>

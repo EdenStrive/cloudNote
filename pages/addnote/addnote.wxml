@@ -1,0 +1,48 @@
+<view class="note">
+    <view class="note-header">
+        <text class="now">当前时间：{{now}}</text>
+        <!-- <image src="../../img/save.png" bindtap="save"></image> -->
+    </view>
+    <view class="textarea">
+        <textarea show-confirm-bar auto-height placeholder="请输入内容…" bindinput="change" value="{{item.content}}" maxlength="-1"></textarea>
+    </view>
+    <view class="section fade" wx:if="{{showTime}}">
+      <picker mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+        <view class="picker">
+          提醒时间: {{item.alarmTime}}
+        </view>
+      </picker>
+    </view>
+    <view wx:if="{{voicing}}" class="sound-view">
+        <image class="sound-style" src="../../img/voice_icon_speech_sound_1.png" ></image>
+        <image wx:if="{{frame==2}}" class="sound-style" src="../../img/voice_icon_speech_sound_2.png" ></image>
+        <image wx:if="{{frame==3}}" class="sound-style" src="../../img/voice_icon_speech_sound_3.png" ></image>
+        <image wx:if="{{frame==4}}" class="sound-style" src="../../img/voice_icon_speech_sound_4.png" ></image>
+        <image wx:if="{{frame==5}}" class="sound-style" src="../../img/voice_icon_speech_sound_5.png" ></image>
+    </view>
+    <view wx:if="{{item.voiceFlag}}" class="voice-url" bindtouchstart="voicePlay" bindtouchend="voiceEnd" data-voice="{{item.savedFilePath}}">
+        <view class="voice-img">
+            <image src="../../img/voice_play.png" />
+        </view>
+        <view class="voice-duration">
+            {{item.duration}}''
+        </view>
+    </view>
+    <view class="place" wx:if="{{item.place}}">{{item.place.title}}</view>
+    <view class="menu fade" wx:if="{{showMenu}}">
+        <view bindtap="{{!item.alarmTime ? 'showTime' : 'cancelTime'}}">{{item.alarmTime ? '取消闹钟' : '设定闹钟'}}</view>
+        <view bindtap="{{!item.place ? 'showPlace': 'cancelPlace'}}">{{item.place ? '取消地点' : '设定地点'}}</view>
+    </view>
+    <view class="btn-box">
+        <button class="all" bindtap="showMenu">
+            <image src="../../img/all.png"></image>
+        </button>
+        <button class="voice" bindtouchstart="record" bindtouchend="end">
+            <image src="../../img/voice.png"></image>
+        </button>
+        <button class="share" open-type="share">
+            <image src="../../img/share.png"></image>
+        </button>
+    </view>
+    <!-- <canvas id="shareCanvas"></canvas> -->
+</view>

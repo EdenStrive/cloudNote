@@ -1,0 +1,22 @@
+<view class="page">
+    <view class="login-box">
+        <view class="list">
+            <view data-flag="Sign In" class="sign-in {{signFlag=='Sign In'?'sign-active':''}}" bindtap="signClick" hover-class="hover-press">登录</view>
+            <view data-flag="Sign Up" class="sign-up {{signFlag=='Sign Up'?'sign-active':''}}" bindtap="signClick" hover-class="hover-press" hover-class="hover-press" >注册</view>
+        </view>
+        <form bindsubmit="formsubmit">
+            <view class="input">
+                <input type="text" required="required" name="email" placeholder="邮箱"  hover-class="hover-press" />
+                <input type="password" required="required" name="password" placeholder="密码"  hover-class="hover-press" />
+                <input style="display:{{signFlag=='Sign In'?'none':''}}" name="{{signFlag=='Sign In'?'none':'repassword'}}" type="password" placeholder="密码"  hover-class="hover-press" />
+            </view>
+            <view class="btn">
+                <button class="sign" formType="submit" hover-class="hover-press">{{signFlag}}</button>
+            </view>
+        </form>
+        <view class="hits" style="justify-content:{{signFlag=='Sign In'?'space-between':'center'}}">
+            <view class="wechat" bindtap="loginWechat" hover-class="hover-press">微信登录</view>
+            <view class="forget" hidden="{{signFlag=='Sign Up'?true:false}}" bindtap="forgetPass" hover-class="hover-press">忘记密码</view>
+        </view>
+    </view>
+</view>

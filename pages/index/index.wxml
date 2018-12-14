@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="list-page">
+    <view class="header">
+        <view class="header-menu">
+            <image wx:if="{{!logining}}" src="../../img/menu.png" class="menu" bindtap="login" />
+            <image wx:else="{{logining}}" src="../../img/loginu.png" class="menu" bindtap="userinfo" />
+            <text class="title">笔记列表</text>
+            <!-- <image src="../../img/plus.png" class="edit" bindtap="add" /> -->
+        </view>
+    </view>
+    <input type="text" class="search" placeholder="搜索…" bindinput="noteSearch" />
+    <scroll-view scroll-y class="list-box">
+      <view class="item-list" wx:for="{{mylists}}" wx:for-index="index" wx:key="id">
+           <view class="list-i {{item.pin == 1 ? 'list-i-pin' : ''}}" bindtap="edit" bindlongpress="press" data-index="{{index}}" data-id="{{item.id}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style="{{item.txtStyle}}">
+                <view class="info-wrapper">
+                    <view class="info-desc">
+                        <text class="time">{{item.time}}</text>
+                        <text class="content">{{item.indexCon}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="info-menu">
+                <view class="menu-pin" catchtap="{{item.pin ? 'cancelPin' : 'pinItem'}}" data-id="{{item.id}}">{{item.pin ? "取消置顶" : "置顶"}}</view>
+                <view wx:if="{{logining}}" class="menu-upload" catchtap="upload" data-id="{{item.id}}">上传</view>
+                <view class="menu-del" catchtap="delete" data-id="{{item.id}}">删除</view>
+            </view>
+      </view>
+    </scroll-view>
+    <view class="img" bindtap="add" hover-class="i-press">
+        <image src="../../img/plus.png" />
+    </view>
+</view>

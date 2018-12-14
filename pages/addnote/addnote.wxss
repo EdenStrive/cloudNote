@@ -1,0 +1,147 @@
+.fade {
+    transition: all 0.2s ease;
+}
+.note {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.note .note-header {
+    display: flex;
+    /*justify-content: space-between;*/
+    height: 5vh;
+    line-height: 5vh;
+    margin-right: 30rpx;
+    align-items: center;
+}
+/*.note .note-header .save, .note .note-header image {
+    width: 6vw;
+    height: 4vh;
+    position: absolute;
+    bottom: 180rpx;
+    left: 15rpx;
+}*/
+.note .now, .note .textarea {
+    margin-left: 1vh;
+}
+.note .now {
+    width: 100vw;
+    height: 5vh;
+    /*line-height: 5vh;*/
+    font-size: 30rpx;
+    color: #999;
+}
+.note .textarea {
+    margin-top: 2vh;
+    height: 90vh;
+    font-size: 28rpx;
+}
+.btn-box {
+    display: flex;
+}
+.btn-box .all, .btn-box .voice, .btn-box .share {
+    flex: 1;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #db3434;
+    border-radius: 0;
+}
+.btn-box .all::after, .btn-box .voice::after {
+    border-right: 3rpx solid #fff;
+}
+.btn-box .voice::after, .btn-box .share::after {
+    border-left: 3rpx solid #fff;
+}
+.btn-box image {
+    width: 10vw;
+    height: 6vh;
+}
+.menu {
+    width: 33.33333%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+    position: absolute;
+    bottom: 8vh;
+    transition: height 0.5s ease;
+}
+.menu > view {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    font-size: 30rpx;
+}
+.sound-view {
+    width: 200rpx;
+    height: 200rpx;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sound-style {
+    position: absolute;
+    width: 74rpx;
+    height:150rpx;
+}
+.place {
+    position: absolute;
+    bottom: 200rpx;
+    right: 15rpx;
+    font-size: 30rpx;
+    opacity: 0.5;
+}
+.voice-url {
+    display: flex;
+    width: 25vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 180rpx;
+    left: 15rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 15rpx;
+}
+.voice-url .voice-img {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: 10rpx;
+    align-self: center;
+}
+.voice-url .voice-img image {
+    width: 5vw;
+    height: 5vw;
+}
+.voice-url .voice-duration {
+    width: 5vw;
+    height: 5vw;
+    align-self: center;
+    position: absolute;
+    right: 10rpx;
+    font-size: 30rpx;
+    opacity: 0.5;
+}
+.section .picker {
+    width: 30vw;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 30rpx;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    bottom: 270rpx;
+    right: 50rpx;
+}

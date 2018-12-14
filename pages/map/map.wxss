@@ -1,0 +1,63 @@
+/* pages/map/map.wxss */
+.map{
+  width: 100%;
+  height: 40vh;
+}
+.bigX{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-left: 5%;
+	line-height: 250%;
+}
+.big1{
+	font-size: 1rem;
+	opacity: 0.5;
+}
+.big2{
+	font-size: 1rem;		
+}
+.big3{
+	height: 0.1rem;
+	background-color: black;
+	width: 70%;
+	opacity: 0.3;
+}
+.big4{
+	height: 0.1rem;
+	background-color: black;
+	width: 40%;
+	opacity: 0.3;
+}
+.big5{
+	display: flex;
+	justify-content: flex-start;
+}
+.big52{
+	font-size: 1rem;
+	opacity: 0.5;
+
+}
+.big54{
+	height: 0.1rem;
+	background-color: black;
+	width: 200%;
+	opacity: 0.3;
+
+}
+.big53{
+	display: block;
+	font-size: 1rem;	
+	margin-left:180%;	
+}
+.bigL{
+	height: 0.1rem;
+	background-color: black;
+	width: 200%;
+	opacity: 0.3;
+}
+.big7{
+	position: relative;
+	margin-left: 40%;
+}

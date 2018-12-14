@@ -1,0 +1,118 @@
+/**index.wxss**/
+.title {
+    color: #dc5655;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header .header-menu {
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.header image {
+    width: 8vw;
+    height: 5vh;
+}
+.header .header-menu .title {
+    margin-right: 50%;
+    transform: translateX(50%);
+}
+.search {
+    height: 5vh;
+    border: 1px solid #ccc;
+    border-radius: 5rpx;
+    font-size: 30rpx;
+    margin: 15rpx 20rpx 15rpx 20rpx;
+    padding-left: 20rpx;
+    opacity: .5;
+}
+.list-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 10rpx;
+    overflow: hidden;
+}
+.item-list{
+    position: relative;
+    width: 100%;
+}
+.list-box .list-i {
+    display: flex;
+    padding: 20rpx 40rpx;
+    border-bottom: 2rpx solid #eee;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    transition: left 0.2s ease-in-out;
+}
+.list-box .list-i-pin {
+    background-color: #EDEDED;
+}
+.i-press {
+    opacity: 0.5;
+}
+.i-pin {
+    background-color: #ccc;
+}
+.list-i .info-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list-i .content {
+    margin-top: 20rpx;
+    font-size: 26rpx;
+    color: #999;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.list-i .time {
+    flex: 1;
+    font-size: 26rpx;
+    color: #dc5655;
+}
+.info-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+}
+.info-menu .menu-pin, .info-menu .menu-upload, .info-menu .menu-del{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150rpx;
+    z-index: 1;
+    color: white;
+    font-size: 30rpx;
+}
+.info-menu .menu-pin {
+    background-color: lightgray;
+}
+.info-menu .menu-upload {
+    background-color: rgb(250, 173, 31);
+}
+.info-menu .menu-del {
+    background-color: red;
+}
+.list-page .img {
+    position: absolute;
+    bottom: 50rpx;
+    right: 50rpx;
+}
+.list-page .img image {
+    width: 10vw;
+    height: 10vw;
+}

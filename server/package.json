@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "node voice recognition",
+  "main": "AiSpeechRecognition.js",
+  "dependencies": {
+    "baidu-aip-sdk": "^2.2.0",
+    "express": "~4.15.5",
+    "ffmpeg": "latest",
+    "@ffmpeg-installer/ffmpeg": "^1.0.13",
+    "fluent-ffmpeg": "^2.1.2",
+    "multiparty": "^4.1.3",
+    "redis": "latest",
+    "bluebird": "latest",
+    "request": "latest",
+    "body-parser": "latest",
+    "mysql": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jeremy",
+  "license": "ISC"
+}
