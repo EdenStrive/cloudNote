@@ -5,7 +5,7 @@
   "main": "AiSpeechRecognition.js",
   "dependencies": {
     "baidu-aip-sdk": "^2.2.0",
-    "express": "~4.15.5",
+    "express": "~4.17.3",
     "ffmpeg": "latest",
     "@ffmpeg-installer/ffmpeg": "^1.0.13",
     "fluent-ffmpeg": "^2.1.2",
